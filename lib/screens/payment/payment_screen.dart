@@ -15,7 +15,7 @@ Future<void> fetchUser() async {
   if (response.statusCode == 200) {
     return json.decode(response.body);
   } else {
-    throw "Can't get user info";
+    throw "Can't get user information";
   }
 }
 
@@ -65,7 +65,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
       Future.delayed(Duration(milliseconds: 0)).then((_) {
         Navigator.pushReplacementNamed(context, '/home');
         Flushbar(
-          title: "Анхааруулга",
+          title: "Анхааруулга",wx
           message: "Та нэвтрэх хэрэгтэй",
           duration: Duration(seconds: 5),
         )..show(context);
